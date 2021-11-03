@@ -1,0 +1,51 @@
+Function SelectingSpell(spells):	
+	on spell clicked
+	linear search(spell)
+	return spell
+
+
+Function SpellInfo(spell):
+	display spell on screen
+	display cancel
+	if cancel pressed:
+		Cancel = True
+	return Cancel
+
+
+Function LevelCheck(spell):
+	if spell = Cantrip:
+		spell level = 0
+		return spell
+	x = lowest spell level
+	if spell slots > 0 and spell slots level >= x:
+		display slots >= x
+		display cancel
+		display("at what level do you want to cast the spell")
+		if cancel pressed:
+			Cancel = True
+			return
+		mark used spell slot
+		spellLevel = level of slot
+		return spellLevel
+	else:
+		display ("Sorry you do not have a slot remaining to cast this spell")
+
+Function attackRoll(spell):
+	x = roll d20
+	y = x + spell Attack modifier
+	if y hits:
+		return y
+	else:
+		Cancel = True
+		return Cancel
+
+
+
+Function spellSave(spell):
+	y = saveType
+	z = CharacterSpellSaveDC
+	display ("spell requires " + y + " save " + z " Please ask your DM to roll")
+	if spell area = 0:
+		if spellTarget= "multi":
+		
+		
