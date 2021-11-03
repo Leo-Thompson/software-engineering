@@ -45,7 +45,30 @@ Function spellSave(spell):
 	y = saveType
 	z = CharacterSpellSaveDC
 	display ("spell requires " + y + " save " + z " Please ask your DM to roll")
-	if spell area = 0:
-		if spellTarget= "multi":
+	if spell area = 1 || spellTarget = "multi":
+		display ("does spell have more than one target?")
+		if targets > 1:
+			display ("have all targets failed")
+			if true:
+				return
+			else:
+				display ("have all targets passed")
+				if True:
+					Save = True
+					return Save
+				else: 
+					Save = TrueFalse
+					return Save
+		else:
+			display pass button
+			display fail button
+			if fail button pressed:
+				return
+			else if pass button pressed:
+				Save = True
+				return Save
+	
+			
+		
 		
 		
