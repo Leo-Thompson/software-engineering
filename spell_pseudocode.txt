@@ -1,3 +1,5 @@
+
+
 Function SelectingSpell(spells):	
 	on spell clicked
 	linear search(spell)
@@ -79,7 +81,7 @@ Function spellDisplay():
 	return
 	
 	
-spellDamageRoll(spellDamage):
+Function spellDamageRoll(spellDamage):
 	x = numberOfDie
 	y = dieTypeSpellRolls
 	z = 0
@@ -90,12 +92,12 @@ spellDamageRoll(spellDamage):
 	return spellDamageOut
 
 
-spellText(spell):
+Function spellText(spell):
 	find spell text
 	display spell text
 	
 
-spellDamageDisplay(spell):
+Function spellDamageDisplay(spell):
 	if save = False:
 		Display spellDamageOut
 	else if save = True:
@@ -105,8 +107,26 @@ spellDamageDisplay(spell):
 		Display spellDamageOut / 2
 
 
-spellStatus(spell):
+Function spellStatus(spell):
 	if save != True:
 		Display spellStatusEffect
 	return
 		
+
+Function castingSpell():
+	spell = []
+	Cancel = False
+	spellLevel = 0
+	save = False
+	spell = selectSpell()
+	spellInfo()
+	if cancel = True:
+		return
+	levelCheck()
+	if cancel = True:
+		return
+	if spell needsAttackRoll:
+		attackRoll()
+	if spell needsSave:
+		spellSave():
+	spellDisplay()
