@@ -67,8 +67,46 @@ Function spellSave(spell):
 			else if pass button pressed:
 				Save = True
 				return Save
+
+
+Function spellDisplay():
+	display spellText
+	if spell deals damage:
+		damageDealt = spellDamageRoll(spellDamage)
+		display damageDealt
+	if spell status not None:
+		spellStatus
+	return
 	
-			
-		
-		
+	
+spellDamageRoll(spellDamage):
+	x = numberOfDie
+	y = dieTypeSpellRolls
+	z = 0
+	spellDamageOut = 0
+	while z < x:
+		spellDamageOut += rolledDamage
+		z += 1
+	return spellDamageOut
+
+
+spellText(spell):
+	find spell text
+	display spell text
+	
+
+spellDamageDisplay(spell):
+	if save = False:
+		Display spellDamageOut
+	else if save = True:
+		Display spellDamageOut / 2
+	else:
+		Display spellDamageOut
+		Display spellDamageOut / 2
+
+
+spellStatus(spell):
+	if save != True:
+		Display spellStatusEffect
+	return
 		
