@@ -43,4 +43,11 @@ statAssignment(statNames):
     while x < 5:
         ask user to enter stat x
         stat = input
-        #incomplete
+        if stat < 6:
+            display "are you sure and have you checked with dm"
+        
+        confirmation = input "is stat correct"
+        if confirmation = True:
+            x ++
+        
+        
