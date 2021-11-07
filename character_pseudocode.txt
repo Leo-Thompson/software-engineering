@@ -1,0 +1,46 @@
+Function generatingCharacter():
+   characterArray = []
+    level = 0
+    name = user input ("please enter name")
+    characterArray[0] = name
+    
+    find and display list of races and their number'
+    race = user inupt ("please select race via number")
+    characterArray[1] = race
+    
+    while level < 1 or level > 20:
+        int level = user input ("please enter a level from 1 to 20"
+    characterArray[2] = level
+    
+    multiclass = False
+    multiclass = user input ("is your character multiclass
+    if multiclass = True:
+        classes = 0
+        while classes < 2 || classes > 13:
+            classes = input ("how many classes do you have levels in?")
+         y = 0
+         
+         while y < classes:
+            display list of classes
+            ask user to input the class they took a level in
+            if y = z -1:
+                input 1 level to the latest taken class
+                   statAssignment(statNames)
+                   return
+            classLevel = 0
+            
+            while classLevel < 1 || classLevel > z:
+                ask user to enter number number between 1 and z
+                classLevel = input
+            y ++
+         statAssignment(statNames)
+         return
+         
+
+statAssignment(statNames):
+    x = 0
+    
+    while x < 5:
+        ask user to enter stat x
+        stat = input
+        #incomplete
